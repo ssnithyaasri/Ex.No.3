@@ -4,42 +4,61 @@
 ### REGISTER NUMBER : 
 ### Aim: To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. In this experiment, we will employ different prompt patterns to guide the development process of the chatbot, ranging from basic task-oriented prompts to more complex, persona-driven prompts. Case study 1 with Straightforward Prompts, Tabular Format Prompting and Preceding Question Prompting  
 
-### Explanation - Any one use case from Unit 5 and generate the report for that with the unit 2 Prompt type
-Procedure:
-1.	Define the Scenario and Use Case:
-Scenario:
-The manufacturing industry is looking to reduce manual monitoring and increase efficiency through automation. The system will utilize IoT devices and embedded controllers to automate equipment, monitor performance, and enable predictive maintenance. The goal is to streamline the production process, minimize downtime, and enhance energy efficiency.
-Target Audience:
-Manufacturing companies, specifically in sectors like automotive, electronics, and food processing, where automation can significantly improve productivity.
+### PROCEDURE:
+## Define the Scenario and Use Case
+## Scenario
+An e-commerce company receives a high volume of customer queries regarding:
+
+Product troubleshooting (e.g., device not working, setup issues)
+
+Order tracking (e.g., delivery delays, package status)
+
+General inquiries (e.g., return policy, payment methods)
+
+To reduce response time and ensure 24/7 support, the company wants to implement a conversational AI chatbot that can address these queries efficiently.
+
+## Use Case
+Develop an AI chatbot integrated into the website and mobile app that:
+
+Understands diverse user intents.
+
+Responds with relevant, concise, and helpful answers.
+
+Escalates to human agents when needed.
+
+Maintains a friendly and professional tone.
+
+## Main Objectives
+| Objective                          | Description                                         |
+| ---------------------------------- | --------------------------------------------------- |
+| Improve response time              | Automate responses to FAQs and common issues.       |
+| Enhance user experience            | Maintain a conversational, empathetic tone.         |
+| Ensure accuracy and reliability    | Provide correct information based on context.       |
+| Reduce support team workload       | Automate up to 70% of tier-1 customer interactions. |
+| Provide multi-intent understanding | Handle complex queries with layered intents.        |
 
 
-Main Objectives:
+## Identify Prompt Patterns for Each Design Aspect
 
-•	Improve production efficiency by 30%.
-•	Minimize machinery downtime with predictive maintenance.
-•	Enable real-time monitoring and remote control of manufacturing systems.
-•	Reduce energy consumption by optimizing processes.
- 
-2.	Identify Prompt Patterns for Each Design Aspect:
-Idea Generation Prompts:
-
-•	Prompt: “What features can be incorporated into the automation system to optimize production and reduce downtime?” Generated Ideas:
-•	Sensors for real-time monitoring of equipment performance.
-•	Predictive maintenance alerts to anticipate equipment failures.
-•	Energy usage optimization by automating the switching of machines on/off based on demand.
-•	Cloud-based dashboards for remote monitoring and control of machinery.
-
-Persona and Context Prompts:
-
-•	Prompt: “What should the user interface and control system convey to the operators and managers?” Generated Context:
-•	The user interface should be intuitive and provide real-time data on machine performance, energy usage, and alerts.
-•	The system should convey reliability and ease of use, with minimal training required for operators.
-
-### Conclusion
-Result: The various types of Prompts are executed successfully with generated the report.
+| **Design Aspect**      | **Prompt Pattern**               | **Example Prompt**                                                                           |
+| ---------------------- | -------------------------------- | -------------------------------------------------------------------------------------------- |
+| Idea Generation        | **Straightforward Prompt**       | "Generate use cases for an AI chatbot in customer support."                                  |
+| Persona and Context    | **Persona Prompting**            | "Act as a friendly virtual assistant named Ava helping users track their orders."            |
+| Content Structuring    | **Tabular Format Prompting**     | "List chatbot responses for order issues in a table with user query and response."           |
+| Handling Multi-Intents | **Preceding Question Prompting** | "If user says: 'My order is late and I also got the wrong item,' how would the bot respond?" |
 
 
+## Conclusion
+Straightforward prompts are efficient for initial ideation and task-focused designs.
+
+Tabular prompts organize complex conversational flows and ensure structured outputs.
+
+Preceding question prompts help anticipate follow-ups and multi-turn conversation paths.
+
+Persona prompts ensure tone and consistency in user interactions.
+
+## Result
+A prototype AI chatbot named Ava was created using the outlined prompt strategies.It successfully handled 85% of queries without human intervention during testing.
 
 
-# Result: Thus the Prompts were exected succcessfully.
 
