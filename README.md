@@ -1,64 +1,190 @@
 # Ex.No.3-Scenario-Based Report Development Utilizing Diverse Prompting Techniques
 
-### DATE:                                                                            
-### REGISTER NUMBER : 212222230100
-### Aim: To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. In this experiment, we will employ different prompt patterns to guide the development process of the chatbot, ranging from basic task-oriented prompts to more complex, persona-driven prompts. Case study 1 with Straightforward Prompts, Tabular Format Prompting and Preceding Question Prompting  
+## DATE:                                                                            
+## REGISTER NUMBER : 212222230100
+## Aim: To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. In this experiment, we will employ different prompt patterns to guide the development process of the chatbot, ranging from basic task-oriented prompts to more complex, persona-driven prompts. Case study 1 with Straightforward Prompts, Tabular Format Prompting and Preceding Question Prompting Use Case: Customer Support in Retail Environment
+## Objective:
+To design and test an AI-powered chatbot that enhances customer experience in a retail setting by managing inquiries, solving issues, and guiding shoppers using a variety of AI prompting techniques.
 
-### PROCEDURE:
-## Define the Scenario and Use Case
-## Scenario
-An e-commerce company receives a high volume of customer queries regarding:
+## ALGORITHM
+### Step 1: Define Use Case
+Develop a virtual assistant that supports customers in a retail store (online or in-person) by handling product queries, complaints, availability checks, return/exchange policies, and promotional offers.
 
-Product troubleshooting (e.g., device not working, setup issues)
+### Step 2: Define Prompting Techniques
+Apply the following prompting strategies:
 
-Order tracking (e.g., delivery delays, package status)
+1.Direct Instruction
+2.Contextual Prompting
+3.Persona-Based Prompting
+4.Few-Shot Prompting
+5.Chain-of-Thought Prompting
+6.Instruction with Constraints
+7.Reflective Prompting
 
-General inquiries (e.g., return policy, payment methods)
+Step 3: Prompt AI Tools
+Test each prompt using ChatGPT and Claude.
 
-To reduce response time and ensure 24/7 support, the company wants to implement a conversational AI chatbot that can address these queries efficiently.
+Step 4: Capture Outputs
+Collect chatbot responses and assess tone, relevance, and helpfulness.
 
-## Use Case
-Develop an AI chatbot integrated into the website and mobile app that:
+Step 5: Analyze Output
+Evaluate the performance for clarity, emotional intelligence, user experience, and logical flow.
 
-Understands diverse user intents.
+## PROMPTS & OUTPUT OVERVIEW – RETAIL CUSTOMER SUPPORT CONTEXT
+### 1. Direct Instruction Prompting
+Objective: Provide quick and specific responses to common retail questions.
 
-Responds with relevant, concise, and helpful answers.
+Prompt:
+"When a user asks, 'Is this item in stock?', reply: 'Yes, the item is available in our store. Would you like to place an order or check local availability?'"
 
-Escalates to human agents when needed.
+| Platform | Output                                                                         | Analysis                                          |
+| -------- | ------------------------------------------------------------------------------ | ------------------------------------------------- |
+| ChatGPT  | “Yes, it’s currently in stock. Would you like me to help you with your order?” | Prompt followed precisely. Polite and clear.      |
+| Claude   | “The item is in stock! Would you like to reserve or purchase it now?”          | Cheerful tone, accurate, slight added engagement. |
 
-Maintains a friendly and professional tone.
+✅ Evaluation:
+Accuracy: High
+Speed: Instant
+Customer Engagement: Claude added more action-oriented language
 
-## Main Objectives
-| Objective                          | Description                                         |
-| ---------------------------------- | --------------------------------------------------- |
-| Improve response time              | Automate responses to FAQs and common issues.       |
-| Enhance user experience            | Maintain a conversational, empathetic tone.         |
-| Ensure accuracy and reliability    | Provide correct information based on context.       |
-| Reduce support team workload       | Automate up to 70% of tier-1 customer interactions. |
-| Provide multi-intent understanding | Handle complex queries with layered intents.        |
+### 2. Contextual Prompting
+Objective: Use previous interactions to tailor responses.
 
-
-## Identify Prompt Patterns for Each Design Aspect
-
-| **Design Aspect**      | **Prompt Pattern**               | **Example Prompt**                                                                           |
-| ---------------------- | -------------------------------- | -------------------------------------------------------------------------------------------- |
-| Idea Generation        | **Straightforward Prompt**       | "Generate use cases for an AI chatbot in customer support."                                  |
-| Persona and Context    | **Persona Prompting**            | "Act as a friendly virtual assistant named Ava helping users track their orders."            |
-| Content Structuring    | **Tabular Format Prompting**     | "List chatbot responses for order issues in a table with user query and response."           |
-| Handling Multi-Intents | **Preceding Question Prompting** | "If user says: 'My order is late and I also got the wrong item,' how would the bot respond?" |
+Prompt:
+"If a customer previously asked about shoe availability, reply: 'You were checking on those running shoes earlier — they’re now back in stock in your size!'"
+| Platform | Output                                                                                                 | Analysis                                     |
+| -------- | ------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
+| ChatGPT  | “Great news! The running shoes you were interested in earlier are now available in your size.”         | Good memory-based reference. Friendly tone.  |
+| Claude   | “Remember those running shoes you asked about? They’re now restocked in your size. Want to grab them?” | Informal and engaging. Reflects memory well. |
 
 
-## Conclusion
-Straightforward prompts are efficient for initial ideation and task-focused designs.
+✅ Evaluation:
 
-Tabular prompts organize complex conversational flows and ensure structured outputs.
+Context Awareness: Strong
+Tone: Claude slightly more informal and natural
+User Experience: High personalization increases conversion
 
-Preceding question prompts help anticipate follow-ups and multi-turn conversation paths.
+### 3. Persona-Based Prompting
+Objective: Create a friendly and relatable chatbot persona.
 
-Persona prompts ensure tone and consistency in user interactions.
+Prompt:
+"Pretend you’re a bubbly store assistant. Respond: 'Hi! I’m here to help you find the perfect outfit today!'"
+| Platform | Output                                                                                       | Analysis                        |
+| -------- | -------------------------------------------------------------------------------------------- | ------------------------------- |
+| ChatGPT  | “Hi there! I’m your style buddy today — let’s find you something amazing!”                   | Persona clear and enthusiastic. |
+| Claude   | “Hey hey! Looking to freshen up your wardrobe? I’m your fashion friend – let’s get started!” | High energy and very engaging.  |
 
-## Result
-A prototype AI chatbot named Ava was created using the outlined prompt strategies.It successfully handled 85% of queries without human intervention during testing.
+
+
+✅ Evaluation:
+
+Persona Accuracy: Excellent
+Tone: Claude had more flair
+Engagement: High emotional resonance in both
+
+### 4. Few-Shot Prompting
+Objective: Train with examples and test new input.
+
+Prompt with Examples:
+“Examples:
+Q: 'Can I return a product bought on sale?'
+A: 'Yes, sale items can be returned within 7 days with a receipt.'
+Q: 'Do you offer gift wrapping?'
+A: 'Yes, we provide free gift wrapping on request.'
+
+Now answer: 'Is there any student discount?'”
+
+| Platform | Output                                                                                 | Analysis                                        |
+| -------- | -------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| ChatGPT  | “Yes, students get a 10% discount with valid ID. Want help applying it to your order?” | Follows the example pattern perfectly.          |
+| Claude   | “Absolutely! Show your student ID at checkout for 10% off.”                            | Friendly and concise. Well aligned with format. |
+
+✅ Evaluation:
+
+Pattern Matching: Strong
+Clarity: Both platforms respond cleanly
+Engagement: Helpful, informative
+
+### 5. Chain-of-Thought Prompting
+Objective: Guide step-by-step troubleshooting.
+
+Prompt:
+"When a customer says, 'I bought a blender and it’s not working,' respond by:
+Apologizing
+
+Asking for receipt/order ID
+
+Providing troubleshooting or exchange info"
+
+| Platform | Output                                                                                                                                                           | Analysis                             |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| ChatGPT  | “I’m really sorry to hear that your blender isn’t working. Could you please share your order ID? I’ll check the issue and guide you through an exchange or fix.” | Logical and clear. Covers all steps. |
+| Claude   | “Oh no! That’s not what we want. Can you share your receipt or order number? We’ll look into a fix or replacement right away.”                                   | Empathetic and structured.           |
+
+
+✅ Evaluation:
+
+Completeness: All steps covered
+Empathy: Claude uses more emotional expressions
+Clarity: Excellent
+
+### 6. Instruction with Constraints
+Objective: Keep responses short, simple, and clear.
+
+Prompt:
+“Use <30 words, simple language: 'Can I cancel my order?' → 'Yes, your order can be canceled within 2 hours. Just click "Cancel Order" in your profile.'”
+
+| Platform | Output                                                                                        | Analysis                             |
+| -------- | --------------------------------------------------------------------------------------------- | ------------------------------------ |
+| ChatGPT  | “Yes, you can cancel your order within 2 hours. Go to your profile and click ‘Cancel Order.’” | Clear and concise.                   |
+| Claude   | “Sure! You can cancel your order in 2 hours. Just visit your profile and hit ‘Cancel.’”       | Simpler wording, easy to understand. |
+
+
+✅ Evaluation:
+
+Constraint Compliance: Both <30 words
+Simplicity: Claude used more natural phrasing
+Usability: High for both
+
+### 7. Reflective Prompting
+Objective: Mirror user intent to confirm issue before resolving.
+
+Prompt:
+"If a user says, 'I didn’t receive my invoice', reply with: 'So you haven’t received your invoice, right? Let me email it to you now.'"
+| Platform | Output                                                                                     | Analysis                    |
+| -------- | ------------------------------------------------------------------------------------------ | --------------------------- |
+| ChatGPT  | “You’re saying the invoice hasn’t reached you yet, correct? I’ll send it over right away.” | Mirrors and clarifies well. |
+| Claude   | “You didn’t get your invoice, right? I’ll email it to you now.”                            | Shorter and more direct.    |
+
+
+
+
+✅ Evaluation:
+
+Reflection Accuracy: Good in both
+Tone: ChatGPT is slightly more formal
+Resolution Action: Clearly provided
+
+## RESULT: Prompt Performance Summary
+| Prompt Type                  | Best Performing Platform | Summary of Findings                                     |
+| ---------------------------- | ------------------------ | ------------------------------------------------------- |
+| Direct Instruction           | both ChatGpt and   Claude                     | Both were clear and helpful                             |
+| Contextual Prompting         | Claude                   | More personalized and natural                           |
+| Persona-Based Prompting      | Claude                   | Stronger persona and emotional tone                     |
+| Few-Shot Prompting           |both ChatGpt and   Claude                       | Both understood pattern and generated accurate response |
+| Chain-of-Thought Prompting   | ChatGPT                  | Better structured logical flow                          |
+| Instruction with Constraints | Claude                   | Simpler and more user-friendly                          |
+| Reflective Prompting         | ChatGPT                  | Better reflection and confirmation of issue             |
+
+## INSIGHTS
+ChatGPT excelled at logical problem-solving and formal tone.
+
+Claude provided more emotional depth, especially in persona and empathetic interactions.
+
+Both were highly effective in providing fast, accurate, and customer-friendly support in retail scenarios.
+
+## CONCLUSION
+Diverse prompting techniques enhance chatbot responsiveness and user experience in retail. By combining different styles such as direct instructions, emotional tone, step-by-step logic, and context-awareness, AI chatbots can significantly improve customer satisfaction, reduce response time, and drive sales conversions. 
 
 
 
